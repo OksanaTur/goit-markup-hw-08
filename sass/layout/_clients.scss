@@ -1,0 +1,33 @@
+.company-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.company-list__icon {
+    fill: currentColor;
+    transition: fill var(--transition-dur-and-func);
+
+    .company-list__link:hover &,
+    .company-list__link:focus & {
+            fill: var(--accent-color);
+        }
+}
+
+.company-list__link {
+    @extend %align;
+    width: 170px;
+    height: 92px;
+    color: var(--icons);
+    border: 1px solid var(--icons);
+    border-radius: 4px;
+    transition: color var(--transition-dur-and-func), border var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+    }
+    
+

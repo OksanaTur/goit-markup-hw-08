@@ -1,0 +1,40 @@
+.hero-button {
+    background-color: var(--accent-color);
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    @include font (700, 16px, 30px);
+    color: var(--light-font-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.buttons-list {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.buttons-list__name{
+    padding: 6px 22px;
+    display: inline-block;
+    text-align: center;
+    font-family: inherit;
+    min-width: 73px;
+    @include font (500, 16px, 26px);
+    letter-spacing: 0.03em;
+    color: var(--main-font-color);
+    background-color: var(--bgd-secondary-color);
+    transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func),
+        box-shadow var(--transition-dur-and-func);
+
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+    color: var(--light-font-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+   }
+}
+
+

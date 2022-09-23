@@ -1,0 +1,28 @@
+.features-list {
+    display: flex;
+    gap: 30px;
+}
+
+.features-list__box {
+    @extend %align;
+    width: 270px;
+    height: 120px;
+    background-color: var(--bgd-secondary-color);
+    margin-bottom: 30px;
+}
+
+.features-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.features-list__name {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @include font(700, 14px, 16px);
+    color: var(--main-font-color);
+}
+
+.features-list__description {
+    @include font(400, 14px, 24px);
+    color: var(--secondary-font-color);
+}
