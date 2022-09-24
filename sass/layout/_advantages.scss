@@ -1,5 +1,6 @@
 .features-list {
     display:block;
+    gap: 30px;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -31,21 +32,29 @@
     flex-basis: calc((100% - 90px) / 4);
 }
 
-@media screen and (max-width: 767px) {
-    .features-list__item:not(:last-child) {
-    margin-bottom: 30px;
-    }
-}
-
-
 .features-list__name {
     text-transform: uppercase;
+    text-align: center;
+    max-width: 450px;
     margin-bottom: 10px;
     @include font(700, 14px, 16px);
     color: var(--main-font-color);
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        text-align: left;
+    }
 }
 
 .features-list__description {
+    max-width: 450px;
     @include font(400, 14px, 24px);
     color: var(--secondary-font-color);
+    margin-bottom: 30px;
+    
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        margin-bottom: auto;
+    }
 }

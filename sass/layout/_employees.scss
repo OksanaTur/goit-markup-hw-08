@@ -1,10 +1,29 @@
 .employees-section {
     background-color: var(--bgd-secondary-color);
+    display: block;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .employees-list {
-    display: flex;
+    display: block;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
 }
 
 .employees-list__wrapper {
