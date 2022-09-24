@@ -772,6 +772,10 @@ button {
   }
 }
 
+.features-list__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 @media screen and (max-width: 767px) {
   .features-list__item:not(:last-child) {
     margin-bottom: 30px;
