@@ -1,19 +1,38 @@
 .features-list {
-    display: flex;
-    gap: 30px;
+    display:block;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        }
+    
+
+  @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .features-list__box {
     @extend %align;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: var(--bgd-secondary-color);
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+}
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
-.features-list__item {
-    flex-basis: calc((100% - 90px) / 4);
+@media screen and (max-width: 767px) {
+    .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+    }
 }
+
 
 .features-list__name {
     text-transform: uppercase;
