@@ -18,7 +18,7 @@
 <body>
     <!--Header-->
     <header class="page-header">
-        <div class="container page-header-container">
+        <div class="container page-header__container">
         <nav class="page-header-nav">
             <a class="logo link" href="./index.html">Web<span class="accent">Studio</span></a>
             <ul class="nav-list list">
@@ -51,9 +51,9 @@
                     </svg>
                 </button>
                 <ul class="mobile-nav-list list">
-                    <li class="mobile-nav-list__item"><a class="link mobile-nav-list__link mobile-nav-list__link_current"
+                    <li class="mobile-nav-list__item"><a class="link mobile-nav-list__link"
                             href="/index.html">Студія</a></li>
-                    <li class="mobile-nav-list__item"><a class="link mobile-nav-list__link" href="/portfolio.html">Портфоліо</a>
+                    <li class="mobile-nav-list__item"><a class="link mobile-nav-list__link mobile-nav-list__link_current" href="/portfolio.html">Портфоліо</a>
                     </li>
                     <li class="mobile-nav-list__item"><a class="link mobile-nav-list__link" href="#">Контакти</a></li>
                 </ul>
@@ -93,7 +93,18 @@
                 <li class="projects-list__example">
                     <a class=" link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                            <img src="./images/technoduck.jpg" alt="Технокряк веб-сайт" width="370">
+                            <picture>
+                                <source 
+                                srcset="./images/technoduck.jpg 1x, ./images/technoduck@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <source 
+                                srcset="./images.tablet/technoduck-tab.jpg 1x, ./images.tablet/technoduck-tab@2x.jpg 2x"
+                                 media="(min-width: 768px)">
+                                <source
+                                 srcset="./images.mob/technoduckmob.jpg 1x, ./images.mob/technoduckmob@2x.jpg 2x"
+                                  media="(max-width: 767px)">
+                            <img src="./images.mob/technoduckmob.jpg" alt="Технокряк веб-сайт">
+                            </picture>
                             <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -107,7 +118,18 @@
                 <li class="projects-list__example">
                     <a class="link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                        <img src="./images/basketball.jpg" alt="Постер" width="370">
+                            <picture>
+                                <source 
+                                srcset="./images/basketball.jpg 1x, ./images/basketball@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source 
+                                srcset="./images.tablet/bask-tab.jpg 1x, ./images.tablet/bask-tab@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source 
+                                srcset="./images.mob/bask-mob.jpg 1x, ./images.mob/bask-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                        <img src="./images.mob/bask-mob.jpg" alt="Постер">
+                        </picture>
                     <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                         дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -121,8 +143,15 @@
                 <li class="projects-list__example">
                     <a class="link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                            <img src="./images/seafood.jpg" alt="Додаток ресторану"
-                            width="370">
+                            <picture>
+                                <source srcset="./images/seafood.jpg 1x, ./images/seafood@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <source srcset="./images.tablet/seafood-tab.jpg 1x, ./images.tablet/seafood-tab@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                                <source srcset="./images.mob/seafood-mob.jpg 1x, ./images.mob/seafood-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            <img src="./images.mob/seafood-mob.jpg" alt="Додаток ресторану">
+                            </picture>
                             <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -136,8 +165,15 @@
                 <li class="projects-list__example">
                     <a class="link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                            <img src="./images/prime.jpg" alt="Проєкт з маркетингу"
-                            width="370">
+                            <picture>
+                                <source srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <source srcset="./images.tablet/prime-tab.jpg 1x, ./images.tablet/prime-tab@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                                <source srcset="./images.mob/prime-mob.jpg 1x, ./images.mob/prime-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            <img src="./images.mob/prime-mob.jpg" alt="Проєкт з маркетингу">
+                            </picture>
                             <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -151,7 +187,15 @@
                 <li class="projects-list__example">
                     <a class="link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                        <img src="./images/boxes.jpg" alt="Проєкт" width="370">
+                            <picture>
+                                <source srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <source srcset="./images.tablet/boxes-tab.jpg 1x, ./images.tablet/boxes-tab@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                                <source srcset="./images.mob/boxes-mob.jpg 1x, ./images.mob/boxes-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                        <img src="./images.mob/boxes-mob.jpg" alt="Проєкт">
+                            </picture>
                         <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                             дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -165,7 +209,15 @@
                 <li class="projects-list__example">
                     <a class="link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                        <img src="./images/inspiration.jpg" alt="Веб-сайт" width="370">
+                            <picture>
+                                <source srcset="./images/inspiration.jpg 1x, ./images/inspiration@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <source srcset="./images.tablet/inspiration-tab.jpg 1x, ./images.tablet/inspiration-tab@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                                <source srcset="./images.mob/inspiration-mob.jpg 1x, ./images.mob/inspiration-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                        <img src="./images.mob/inspiration-mob.jpg" alt="Веб-сайт">
+                            </picture>
                         <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                             дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -179,7 +231,15 @@
                 <li class="projects-list__example">
                     <a class="link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                        <img src="./images/magazine.jpg" alt="Журнал" width="370">
+                            <picture>
+                                <source srcset="./images/magazine.jpg 1x, ./images/magazine@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <source srcset="./images.tablet/magazine-tab.jpg 1x, ./images.tablet/magazine-tab@2x.jpg 2x"
+                                 media="(min-width: 768px)">
+                                <source srcset="./images.mob/magazine-mob.jpg 1x, ./images.mob/magazine-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                        <img src="./images.mob/magazine-mob.jpg" alt="Журнал">
+                            </picture>
                         <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                             дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -193,8 +253,15 @@
                 <li class="projects-list__example">
                     <a class="link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                        <img src="./images/label.jpg" alt="Проєкт з маркетингу"
-                            width="370">
+                            <picture>
+                                <source srcset="./images/label.jpg 1x, ./images/label@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <source srcset="./images.tablet/tag-tab.jpg 1x, ./images.tablet/tag-tab@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                                <source srcset="./images.mob/tag-mob.jpg 1x, ./images.mob/tag-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                        <img src="./images.mob//tag-mob.jpg" alt="Проєкт з маркетингу">
+                            </picture>
                             <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -208,8 +275,15 @@
                 <li class="projects-list__example">
                     <a class="link projects-list__link" href="#" target="_blank">
                         <div class="projects-list__img_wrapper">
-                        <img src="./images/growbusiness.jpg" alt="Додаток по бізнесу"
-                            width="370">
+                            <picture>
+                                <source srcset="./images/growbusiness.jpg 1x, ./images/growbusiness@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                                <source srcset="./images.tablet/growbus-tab.jpg 1x, ./images.tablet/growbus-tab@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                                <source srcset="./images.mob/growbus-mob.jpg 1x, ./images.mob/growbus-mob@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                        <img src="./images.mob/growbus-mob.jpg" alt="Додаток по бізнесу">
+                            </picture>
                             <p class="projects-list__img_overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -283,10 +357,9 @@
                                 <input type="text" class="form-footer-input" name="user_email"
                                     pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required placeholder="E-mail">
                             </span>
-                            <button type="submit" class="footer-btn-subscribe">Підписатися</button>
-                            <svg class="footer-btn-icon">
+                            <button type="submit" class="footer-btn-subscribe">Підписатися<svg class="footer-btn-icon">
                                 <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
+                            </svg></button>
                     </label>
             </div>
             </form>
@@ -294,7 +367,7 @@
         </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+  <script src="./js/modal.js"></script> 
 </body>
 
 </html>

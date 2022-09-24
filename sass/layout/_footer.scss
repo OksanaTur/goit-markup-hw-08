@@ -2,13 +2,29 @@
     background-color: var(--bgd-dark-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 767px){
+        text-align: center;
+    }
 }
 
 .page-footer-container {
-    display: flex;
-    align-items: baseline;
-}
+    display:block;
 
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 1200px) {
+       align-items: baseline;
+       text-align: left;
+}
+}
 .footer-address__item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -36,7 +52,15 @@
 }
 
 .footer-join-container {
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px){
     margin-left: 70px;
+    }
 }
 
 .footer-join-title {
@@ -83,14 +107,19 @@
 }
 
 .footer-area-subscribe {
-    margin-left: auto;
-
+     margin-top: 60px;
+         
+                 @media screen and (min-width: 1200px) {
+                     margin-left: auto;
+                 }
 }
 
 .footer-subscribe-wrapper {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
+    display: block;
+
+         @media screen and (min-width: 1200px) {
+             display: flex;
+         }         
 }
 
 .form-footer-subscribe {
@@ -103,9 +132,12 @@
 }
 
 .footer-btn-subscribe {
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
     height: 50px;
-    padding: 10px 62px 10px 28px;
+    margin-top: 20px;
     background-color: var(--bg-footer-icon);
     color: var(--light-font-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -116,19 +148,21 @@
     align-items: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    margin-left: 12px;
     transition: background-color var(--transition-dur-and-func);
 
     &:hover,
     &:focus {
         background-color: var(--accent-color);
     }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+            margin-left: 12px;
+        }
 }
 
 .form-footer-wrapper {
-    position: relative;
     display: flex;
-    align-items: center;
 }
 
 .form-footer-input {
@@ -153,15 +187,15 @@
         &:focus {
             outline: none;
         }
+
+        @media screen and (max-width: 1199px) {
+            width: 450px;
+        }
 }
 
 .footer-btn-icon {
     width: 24px;
     height: 24px;
     fill: var(--bgd-light-color);
-    position: absolute;
-    top: 50%;
-    right: 28px;
-    transform: translateY(-50%);
-    margin-left: 10px;
+    margin-left: 10px; 
 }

@@ -153,8 +153,15 @@
             <ul class="employees-list list">
                 <li class="employees-list__wrapper list">
                     <picture>
-                        <source srcset="" media="">
-                    <img src="./images/pers11.jpg" alt="Усміхнений працівник">
+                        <source srcset="./images/pers11.jpg 1x, ./images/pers11@2x.jpg 2x"
+                         media="(min-width: 1200px)">
+                        <source 
+                        srcset="./images.tablet/pers1-tab@1x.jpg 1x, ./images.tablet/pers1-tab@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                        <source
+                        srcset="./images.mob/pers1mob@1x.jpg 1x, ./images.mob/pers1mob@2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                    <img src="./images.mob/pers1mob@1x.jpg" alt="Усміхнений працівник">
                     </picture>
                     <div class="employee">
                     <h3 class="employee__name">Ігор Дем'яненко</h3>
@@ -192,7 +199,15 @@
                     </div>
                 </li>
                 <li class="employees-list__wrapper list">
-                    <img src="./images/pers22.jpg" alt="Білявка в окулярах" width="270">
+                    <picture>
+                        <source srcset="./images/pers22.jpg 1x, ./images/pers22@2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <source srcset="./images.tablet/pers2-tab@1x.jpg 1x, ./images.tablet/pers2-tab@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                        <source srcset="./images.mob/pers2mob@1x.jpg 1x, ./images.mob/pers2mob@2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                    <img src="./images.mob/pers1mob@1x.jpg" alt="Білявка в окулярах">
+                    </picture>
                     <div class="employee">
                     <h3 class="employee__name">Ольга Рєпіна</h3>
                     <p class="employee__position" lang="en">Frontend Developer</p>
@@ -229,7 +244,15 @@
                     </div>
                 </li>
                 <li class="employees-list__wrapper list">
-                    <img src="./images/pers33.jpg" alt="Русявий хлопець в блакитній сорочці" width="270">
+                    <picture>
+                        <source srcset="./images/pers33.jpg 1x, ./images/pers33@2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <source srcset="./images.tablet/pers3-tab@1x.jpg 1x, ./images.tablet/pers3-tab@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                        <source srcset="./images.mob/pers3mob@1x.jpg 1x, ./images.mob/pers3mob@2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                    <img src="./images.mob/pers3mob@1x.jpg" alt="Русявий хлопець в блакитній сорочці">
+                    </picture>
                     <div class="employee">
                     <h3 class="employee__name">Микола Тарасов</h3>
                     <p class="employee__position" lang="en">Marketing</p>
@@ -266,7 +289,15 @@
                     </div>
                 </li>
                 <li class="employees-list__wrapper list">
-                    <img src="./images/pers44.jpg" alt="Хлопець в окулярах" width="270">
+                    <picture>
+                        <source srcset="./images/pers44.jpg 1x, ./images/pers44@2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <source srcset="./images.tablet/pers4-tab@1x.jpg 1x, ./images.tablet/pers4-tab@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                        <source srcset="./images.mob/pers4mob@1x.jpg 1x, ./images.mob/pers4mob@2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                    <img src="./images.mob/pers4mob@1x.jpg" alt="Хлопець в окулярах">
+                    </picture>
                     <div class="employee">
                     <h3 class="employee__name">Михайло Єрмаков</h3>
                     <p class="employee__position" lang="en">UI Designer</p>
@@ -306,7 +337,7 @@
             </div>
         </section> 
         <!--Clients-->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Постійні клієнти</h2>
                 <ul class="company-list list">
@@ -355,10 +386,10 @@
                 </ul>
 
             </div>
-        </section> -->
+        </section>
     </main>
     <!--Footer-->
-    <!-- <footer class="page-footer">
+     <footer class="page-footer">
         <div class="container page-footer-container">
             <div class="container-address">
         <a class="link page-footer__logo" href="./index.html">Web<span class="accented">Studio</span></a>
@@ -412,16 +443,18 @@
                 <span class="form-footer-wrapper">
                     <input type="text" class="form-footer-input" name="user_email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required  placeholder="E-mail">
                 </span>
-                <button type="submit" class="footer-btn-subscribe">Підписатися</button>
-                <svg class="footer-btn-icon">
-                    <use href="./images/icons.svg#icon-send"></use>
-                </svg>
+                <button type="submit" class="footer-btn-subscribe">Підписатися
+                    <svg class="footer-btn-icon">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+                
             </label>
             </div>
         </form>
     </div>
     </div>
-    </footer> -->
+    </footer> 
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">

@@ -6,10 +6,8 @@
     text-align: center;
     color: var(--main-font-color);
     margin-bottom: 12px;
-}
 
 @media screen and (min-width: 1200px) {
-    .modal-form-title {
         line-height: 1.15;
     }
 }
@@ -127,10 +125,8 @@
     align-items: center;
     justify-content: left;
     margin-bottom: 30px;
-}
 
 @media screen and (min-width: 1200px) {
-    .modal-form-check-field {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,10 +137,8 @@
     font-size: 12px;
     line-height: 1.16;
     color: var(--secondary-font-color);
-}
 
 @media screen and (min-width: 1200px) {
-    .checkbox-frase {
         font-size: 14px;
         line-height: 1.71;
     }
@@ -154,10 +148,8 @@
     font-size: 12px;
         line-height: 1.16;
     color: var(--accent-color);
-}
 
 @media screen and (min-width: 1200px) {
-    .checkbox-terms {
         font-size: 14px;
         line-height: 1.71;
     }
