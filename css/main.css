@@ -139,6 +139,11 @@ button {
   flex-wrap: wrap;
   gap: 8px;
 }
+@media screen and (max-width: 480px) {
+  .buttons-list {
+    width: 348px;
+  }
+}
 @media screen and (min-width: 768px) {
   .buttons-list {
     margin-bottom: 30px;
