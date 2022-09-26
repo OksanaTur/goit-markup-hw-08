@@ -1,17 +1,16 @@
 .projects-list {
     display: block;
-    gap: 30px;
 
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     }
 }
 
 .projects-list__example {
     background-color: var(--bgd-light-color);
     transition: box-shadow var(--transition-dur-and-func);
-    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
             flex-direction: column;
@@ -21,6 +20,12 @@
                  @media screen and (min-width: 1200px) {
                      width: calc((100% - 60px) / 3);
                  }
+}
+
+@media screen and (max-width: 767px) {
+.projects-list__example:not(:last-child) {
+    margin-bottom: 30px;
+}
 }
 
 .projects-list__link {
@@ -67,7 +72,7 @@
     padding: 20px 24px;
     border: 1px solid var(--second-border-line);
     border-top: 0;
-    width: 450px;
+    width: 100%;
     flex-grow: 1;
 
     @media screen and (min-width: 768px) {

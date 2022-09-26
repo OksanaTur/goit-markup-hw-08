@@ -17,15 +17,13 @@
     display: inline-flex;
     flex-wrap: wrap;
     gap: 8px;
-
-    @media screen and (max-width: 767px) {
-        width: 348px;
-    }
+    row-gap: 15px;
 
    @media screen and (min-width: 768px) {
         margin-bottom: 30px;
         display: flex;
         justify-content: center;
+    
 }
 
   @media screen and (min-width: 1200px) {
@@ -38,7 +36,6 @@
     display: inline-block;
     text-align: center;
     font-family: inherit;
-    min-width: 73px;
     @include font (500, 16px, 26px);
     letter-spacing: 0.03em;
     color: var(--main-font-color);

@@ -4,11 +4,11 @@
 
 .employees-list {
     display: block;
-    gap: 30px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
 
     }
 
@@ -20,8 +20,7 @@
     background-color: var(--bgd-light-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    width: 450px;
-    margin-bottom: 30px;
+    
 
     @media screen and (min-width: 768px) {
         flex-direction: column;
@@ -33,20 +32,19 @@
 }
 }
 
+.employees-list__wrapper:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+   
+}
+
 .employee {
     padding-top: 30px;
     padding-bottom: 24px;
-    width: 450px;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-        padding-bottom: 30px;
-    }
+   
 }
 
 .employee__name {
@@ -72,6 +70,8 @@
 }
 
 .employee-social-item__icon {
+    width: 20px;
+    height: 20px;
     fill: currentColor;
     transition: fill var(--transition-dur-and-func);
 
