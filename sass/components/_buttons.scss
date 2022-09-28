@@ -5,6 +5,7 @@
     display: inline-block;
     @include font (700, 16px, 30px);
     color: var(--light-font-color);
+    letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 @media screen and (min-width: 1200px) {
